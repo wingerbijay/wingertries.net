@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0f1117"/>
+
+  <!-- Top accent -->
+  <rect width="1200" height="3" fill="#f05252"/>
+
+  <!-- ── HEADER ──────────────────────────────────────────────── -->
+  <rect y="3" width="1200" height="72" fill="#161b27"/>
+  <rect y="75" width="1200" height="1" fill="#252d3d"/>
+
+  <!-- CVE tag -->
+  <rect x="36" y="20" rx="4" width="252" height="26" fill="none" stroke="#f05252" stroke-width="1.2"/>
+  <text x="162" y="37" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#f05252" text-anchor="middle" letter-spacing="0.8">CVE-2021-27876 / 27877 / 27878</text>
+
+  <!-- Severity tag -->
+  <rect x="300" y="20" rx="4" width="112" height="26" fill="#7f1d1d"/>
+  <text x="356" y="37" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="600" fill="#fca5a5" text-anchor="middle">CVSS 9.8 CRITICAL</text>
+
+  <!-- Title -->
+  <text x="36" y="65" font-family="'Segoe UI',system-ui,sans-serif" font-size="19" font-weight="700" fill="#f1f5f9">Veritas Backup Exec Agent — How an attacker gets full control with no password</text>
+
+  <!-- ── LEFT NODE — ATTACKER ───────────────────────────────── -->
+  <!-- outer box -->
+  <rect x="30" y="110" rx="8" width="148" height="390" fill="#161b27" stroke="#252d3d" stroke-width="1.2"/>
+
+  <!-- laptop screen -->
+  <rect x="50" y="128" rx="5" width="108" height="70" fill="#0a0d14" stroke="#252d3d" stroke-width="1"/>
+  <!-- screen content -->
+  <text x="60" y="150" font-family="'Courier New',monospace" font-size="9" fill="#f05252">$ python3 be_rce.py</text>
+  <text x="60" y="163" font-family="'Courier New',monospace" font-size="9" fill="#64748b">  192.168.1.50 whoami</text>
+  <text x="60" y="178" font-family="'Courier New',monospace" font-size="9" fill="#10b981">[+] nt authority\system</text>
+  <!-- laptop base -->
+  <rect x="44" y="198" rx="2" width="120" height="8" fill="#1e2533" stroke="#252d3d" stroke-width="0.8"/>
+
+  <!-- label -->
+  <text x="104" y="232" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">ATTACKER</text>
+
+  <!-- separator -->
+  <line x1="50" y1="244" x2="158" y2="244" stroke="#252d3d" stroke-width="1"/>
+
+  <!-- description -->
+  <text x="104" y="264" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Custom Python</text>
+  <text x="104" y="280" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">exploit script</text>
+
+  <text x="104" y="306" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">No credentials.</text>
+  <text x="104" y="322" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">No special access.</text>
+
+  <!-- status dot -->
+  <circle cx="104" cy="356" r="5" fill="#f05252"/>
+  <text x="104" y="380" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#f05252" text-anchor="middle" font-weight="600">ATTACKING</text>
+
+  <!-- ── RIGHT NODE — SERVER ─────────────────────────────────── -->
+  <rect x="1022" y="110" rx="8" width="148" height="390" fill="#161b27" stroke="#252d3d" stroke-width="1.2"/>
+
+  <!-- rack units -->
+  <rect x="1040" y="126" rx="3" width="112" height="18" fill="#0a0d14" stroke="#252d3d" stroke-width="0.8"/>
+  <circle cx="1050" cy="135" r="3.5" fill="#10b981"/>
+  <rect x="1058" y="131" rx="1" width="44" height="8" fill="#1e2533"/>
+  <circle cx="1142" cy="135" r="3" fill="#10b981"/>
+
+  <rect x="1040" y="150" rx="3" width="112" height="18" fill="#0a0d14" stroke="#252d3d" stroke-width="0.8"/>
+  <circle cx="1050" cy="159" r="3.5" fill="#10b981"/>
+  <rect x="1058" y="155" rx="1" width="44" height="8" fill="#1e2533"/>
+  <circle cx="1142" cy="159" r="3" fill="#10b981"/>
+
+  <rect x="1040" y="174" rx="3" width="112" height="18" fill="#0a0d14" stroke="#252d3d" stroke-width="0.8"/>
+  <circle cx="1050" cy="183" r="3.5" fill="#f59e0b"/>
+  <rect x="1058" y="179" rx="1" width="44" height="8" fill="#1e2533"/>
+  <circle cx="1142" cy="183" r="3" fill="#64748b"/>
+
+  <!-- port tag -->
+  <rect x="1040" y="198" rx="3" width="112" height="18" fill="#0a0d14" stroke="#252d3d" stroke-width="0.8"/>
+  <text x="1096" y="211" font-family="'Courier New',monospace" font-size="9" fill="#f59e0b" text-anchor="middle">PORT 10000  OPEN</text>
+
+  <!-- label -->
+  <text x="1096" y="244" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="#f1f5f9" text-anchor="middle">BACKUP SERVER</text>
+
+  <line x1="1042" y1="252" x2="1150" y2="252" stroke="#252d3d" stroke-width="1"/>
+
+  <text x="1096" y="272" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Veritas Backup</text>
+  <text x="1096" y="288" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Exec Agent</text>
+
+  <!-- SYSTEM badge -->
+  <rect x="1048" y="308" rx="10" width="96" height="22" fill="#1a0e2e" stroke="#7c3aed" stroke-width="1"/>
+  <text x="1096" y="323" font-family="'Segoe UI',system-ui,sans-serif" font-size="10" font-weight="700" fill="#a78bfa" text-anchor="middle">NT AUTHORITY\SYSTEM</text>
+
+  <text x="1096" y="358" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">Runs as the most</text>
+  <text x="1096" y="374" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b" text-anchor="middle">privileged user</text>
+
+  <circle cx="1096" cy="408" r="5" fill="#7c3aed"/>
+  <text x="1096" y="432" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#a78bfa" text-anchor="middle" font-weight="600">VICTIM</text>
+
+  <!-- ── STEP ROWS ───────────────────────────────────────────── -->
+  <!-- arrow defs -->
+  <defs>
+    <marker id="a-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 Z" fill="#f05252"/>
+    </marker>
+    <marker id="a-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 Z" fill="#10b981"/>
+    </marker>
+    <marker id="a-back" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,1 L9,5 L0,9 Z" fill="#334155"/>
+    </marker>
+  </defs>
+
+  <!-- vertical guide line -->
+  <line x1="600" y1="90" x2="600" y2="510" stroke="#1a2030" stroke-width="1" stroke-dasharray="4,6"/>
+
+  <!-- ── STEP 1 ── y centre = 175 -->
+  <!-- arrow -->
+  <line x1="190" y1="175" x2="1012" y2="175" stroke="#f05252" stroke-width="1.8" marker-end="url(#a-red)"/>
+  <!-- badge -->
+  <circle cx="222" cy="175" r="15" fill="#f05252"/>
+  <text x="222" y="180" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle">1</text>
+  <!-- card -->
+  <rect x="250" y="155" rx="6" width="500" height="40" fill="#161b27" stroke="#252d3d" stroke-width="1"/>
+  <text x="268" y="172" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="#f1f5f9">Connect to the backup port</text>
+  <text x="268" y="188" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b">Backup agent is reachable on port 10000 with no network restriction</text>
+
+  <!-- ── STEP 2 ── y centre = 265 -->
+  <line x1="190" y1="265" x2="1012" y2="265" stroke="#f97316" stroke-width="1.8" marker-end="url(#a-red)"/>
+  <circle cx="222" cy="265" r="15" fill="#f97316"/>
+  <text x="222" y="270" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle">2</text>
+  <rect x="250" y="245" rx="6" width="500" height="40" fill="#161b27" stroke="#252d3d" stroke-width="1"/>
+  <text x="268" y="262" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="#f1f5f9">Perform a fake handshake</text>
+  <text x="268" y="278" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b">Server accepts any certificate the attacker generates on the spot</text>
+
+  <!-- ── STEP 3 ── y centre = 355 -->
+  <line x1="190" y1="355" x2="1012" y2="355" stroke="#f59e0b" stroke-width="1.8" marker-end="url(#a-red)"/>
+  <circle cx="222" cy="355" r="15" fill="#f59e0b"/>
+  <text x="222" y="360" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle">3</text>
+  <rect x="250" y="335" rx="6" width="500" height="40" fill="#161b27" stroke="#252d3d" stroke-width="1"/>
+  <text x="268" y="352" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="#f1f5f9">Send a blank password — server accepts it</text>
+  <text x="268" y="368" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b">The login check never validates the password — any value passes</text>
+
+  <!-- ── STEP 4 ── y centre = 445 -->
+  <line x1="190" y1="445" x2="1012" y2="445" stroke="#10b981" stroke-width="2" marker-end="url(#a-green)"/>
+  <circle cx="222" cy="445" r="15" fill="#10b981"/>
+  <text x="222" y="450" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle">4</text>
+  <rect x="250" y="425" rx="6" width="500" height="40" fill="#0d1f17" stroke="#10b981" stroke-width="1"/>
+  <text x="268" y="442" font-family="'Segoe UI',system-ui,sans-serif" font-size="13" font-weight="700" fill="#10b981">Run any command on the server</text>
+  <text x="268" y="458" font-family="'Segoe UI',system-ui,sans-serif" font-size="11" fill="#64748b">Server executes it as the highest-privilege Windows account and returns output</text>
+
+  <!-- ── RETURN ARROW ───────────────────────────────────────── -->
+  <line x1="1012" y1="492" x2="192" y2="492" stroke="#334155" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#a-back)"/>
+  <rect x="460" y="479" rx="4" width="280" height="24" fill="#161b27" stroke="#252d3d" stroke-width="1"/>
+  <text x="600" y="495" font-family="'Courier New',monospace" font-size="11" fill="#94a3b8" text-anchor="middle">nt authority\system</text>
+
+  <!-- ── RESULT BAR ─────────────────────────────────────────── -->
+  <rect y="524" width="1200" height="106" fill="#0d1f17"/>
+  <rect y="524" width="1200" height="2" fill="#10b981"/>
+
+  <!-- check -->
+  <circle cx="72" cy="577" r="22" fill="none" stroke="#10b981" stroke-width="2"/>
+  <text x="72" y="585" font-family="'Segoe UI',system-ui,sans-serif" font-size="20" fill="#10b981" text-anchor="middle">✓</text>
+
+  <!-- result text -->
+  <text x="112" y="566" font-family="'Segoe UI',system-ui,sans-serif" font-size="17" font-weight="700" fill="#f1f5f9">Full server access — NT AUTHORITY\SYSTEM</text>
+  <text x="112" y="590" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#64748b">The backup agent runs with the highest Windows privilege by design.</text>
+  <text x="112" y="607" font-family="'Segoe UI',system-ui,sans-serif" font-size="12" fill="#64748b">Patch: upgrade to Backup Exec 21.3 or later. Restrict port 10000 to authorised management hosts only.</text>
+
+</svg>
