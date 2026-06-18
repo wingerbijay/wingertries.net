@@ -11,6 +11,11 @@ order: 5
 - LinkedIn: [bijayy-upreti](https://www.linkedin.com/in/bijayy-upreti)
 - TryHackMe: [winger.bijay](https://tryhackme.com/p/winger.bijay)
 
+<a href="/assets/files/Bijay-Upreti-CV.pdf" download="Bijay-Upreti-CV.pdf"
+   class="btn btn-primary" role="button">
+  <i class="fas fa-download"></i> Download CV (PDF)
+</a>
+
 ---
 
 ## Summary
