@@ -14,9 +14,9 @@ timezone: Australia/Sydney
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: WingerTries # the main title
+title: wingerBijay # the main title
 
-tagline: Offensive security research, writeups & experiments # it will display as the subtitle
+tagline: Doing offsec things # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Cybersecurity research, CTF writeups, pentesting notes and security experiments.
